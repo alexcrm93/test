@@ -501,7 +501,7 @@ p  { line-height: 1.75; color: var(--color-text-muted); max-width: 68ch; }
 
 .why-visual {
   background: var(--color-primary);
-  border-radius: 12px;
+  border-radius: var(--radius-card);
   aspect-ratio: 4/5;
   display: flex;
   align-items: center;
@@ -591,7 +591,7 @@ p  { line-height: 1.75; color: var(--color-text-muted); max-width: 68ch; }
 
 .other-service-card {
   background: #fff;
-  border-radius: 8px;
+  border-radius: var(--radius-card);
   padding: 2rem 1.75rem;
   display: flex;
   flex-direction: column;
@@ -622,7 +622,7 @@ p  { line-height: 1.75; color: var(--color-text-muted); max-width: 68ch; }
 .detail-card {
   padding: 2rem 1.75rem;
   background: #fff;
-  border-radius: 8px;
+  border-radius: var(--radius-card);
   border: 1px solid var(--color-bg-warm-dark);
 }
 .detail-card-num {
@@ -980,7 +980,7 @@ p  { line-height: 1.75; color: var(--color-text-muted); max-width: 68ch; }
   width: 45%;
   padding: 1.75rem;
   background: #fff;
-  border-radius: 8px;
+  border-radius: var(--radius-card);
   border: 1px solid var(--color-bg-warm-dark);
   margin-bottom: 2.5rem;
   opacity: 0;
@@ -1036,7 +1036,7 @@ p  { line-height: 1.75; color: var(--color-text-muted); max-width: 68ch; }
   text-align: center;
   padding: 2rem 1.5rem;
   background: #fff;
-  border-radius: 8px;
+  border-radius: var(--radius-card);
   border: 1px solid var(--color-bg-warm-dark);
 }
 .team-avatar {
@@ -1064,7 +1064,7 @@ p  { line-height: 1.75; color: var(--color-text-muted); max-width: 68ch; }
 .value-card {
   text-align: center;
   padding: 3rem 2rem;
-  border-radius: 8px;
+  border-radius: var(--radius-card);
   background: var(--color-bg-warm);
 }
 .value-card svg  { color: var(--color-primary); margin: 0 auto 1.25rem; }
