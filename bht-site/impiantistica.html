@@ -7,7 +7,6 @@
   <meta name="description" content="BHT realizza impianti elettrici, idraulici e termici in Calabria. Conformità D.M. 37/2008, certificazioni F-Gas, sopralluogo gratuito. Cosenza e provincia.">
   <link rel="stylesheet" href="shared.css">
   <style>
-    .imp-hero-label { padding-top: var(--nav-height); }
     .service-intro-section {
       padding: 5rem 0 6rem;
       background: var(--color-bg-warm);
@@ -61,7 +60,7 @@
 </div>
 
 <!-- HERO SCROLL-DRIVEN -->
-<div class="imp-hero-label"></div>
+<div class="service-hero-spacer"></div>
 <section class="scroll-scene-wrapper" id="scena-imp" aria-label="Animazione impianti parete">
   <div class="scroll-scene-sticky" id="sceneSticky">
 
@@ -125,7 +124,7 @@
       <!-- colonna di distribuzione -->
       <line id="water-col" x1="140" y1="118" x2="140" y2="520" stroke="#38bdf8" stroke-width="3.5" stroke-dasharray="402" stroke-dashoffset="402"/>
       <!-- diramazioni orizzontali -->
-      <line id="water-h1" x1="140" y1="290" x2="560" y2="290" stroke="#38bdf8" stroke-width="3" stroke-dasharray="420" stroke-dashoffset="420"/>
+      <line id="water-h1" x1="140" y1="290" x2="620" y2="290" stroke="#38bdf8" stroke-width="3" stroke-dasharray="480" stroke-dashoffset="480"/>
       <line id="water-h2" x1="620" y1="290" x2="1100" y2="290" stroke="#38bdf8" stroke-width="3" stroke-dasharray="480" stroke-dashoffset="480"/>
       <!-- discese ai sanitari -->
       <line id="water-d1" x1="340" y1="290" x2="340" y2="450" stroke="#38bdf8" stroke-width="2.5" stroke-dasharray="160" stroke-dashoffset="160"/>
@@ -137,17 +136,18 @@
       <!-- ===== FASE 3: IMPIANTO TERMICO (rosso) ===== -->
       <!-- caldaia centrale -->
       <g id="boiler" opacity="0">
-        <rect x="560" y="380" width="80" height="100" rx="3" fill="none" stroke="#ef4444" stroke-width="2.5"/>
-        <rect x="572" y="392" width="56" height="40" rx="2" fill="none" stroke="#ef4444" stroke-width="1.5"/>
-        <text x="600" y="470" text-anchor="middle" font-size="9" font-family="Montserrat,sans-serif" font-weight="600" fill="#ef4444">CALDAIA</text>
+        <rect x="614" y="380" width="80" height="100" rx="3" fill="none" stroke="#ef4444" stroke-width="2.5"/>
+        <rect x="626" y="392" width="56" height="40" rx="2" fill="none" stroke="#ef4444" stroke-width="1.5"/>
+        <text x="654" y="470" text-anchor="middle" font-size="9" font-family="Montserrat,sans-serif" font-weight="600" fill="#ef4444">CALDAIA</text>
+        <text x="654" y="490" text-anchor="middle" font-size="7" font-family="Montserrat,sans-serif" fill="#ef4444" opacity="0.75">a condensazione</text>
       </g>
       <!-- fiamma caldaia -->
       <g id="boiler-flame" opacity="0">
-        <path d="M588,430 Q592,418 596,428 Q600,415 604,427 Q608,416 612,428 Q612,435 600,440 Q588,436 588,430Z" fill="#f59e0b" opacity="0.9"/>
+        <path d="M642,430 Q646,418 650,428 Q654,415 658,427 Q662,416 666,428 Q666,435 654,440 Q642,436 642,430Z" fill="#f59e0b" opacity="0.9"/>
       </g>
       <!-- tubi termici -->
-      <line id="therm-l" x1="560" y1="420" x2="200" y2="420" stroke="#ef4444" stroke-width="2.5" stroke-dasharray="360" stroke-dashoffset="360"/>
-      <line id="therm-r" x1="640" y1="420" x2="1000" y2="420" stroke="#ef4444" stroke-width="2.5" stroke-dasharray="360" stroke-dashoffset="360"/>
+      <line id="therm-l" x1="614" y1="420" x2="200" y2="420" stroke="#ef4444" stroke-width="2.5" stroke-dasharray="414" stroke-dashoffset="414"/>
+      <line id="therm-r" x1="694" y1="420" x2="1000" y2="420" stroke="#ef4444" stroke-width="2.5" stroke-dasharray="306" stroke-dashoffset="306"/>
       <!-- radiatori -->
       <g id="rad-l" opacity="0">
         <rect x="160" y="395" width="40" height="80" rx="2" fill="none" stroke="#ef4444" stroke-width="2"/>
@@ -161,7 +161,17 @@
         <line x1="1020" y1="395" x2="1020" y2="475" stroke="#ef4444" stroke-width="1.2"/>
         <line x1="1030" y1="395" x2="1030" y2="475" stroke="#ef4444" stroke-width="1.2"/>
       </g>
+      <!-- ANNOTAZIONI TECNICHE (blueprint labels) -->
+      <text x="600" y="148" text-anchor="middle" font-size="8" font-family="Montserrat,sans-serif" font-weight="600" fill="#f59e0b" opacity="0.55" letter-spacing="1">CEI 64-8 &#183; 220V</text>
+      <text x="110" y="340" text-anchor="middle" font-size="8" font-family="Montserrat,sans-serif" font-weight="600" fill="#38bdf8" opacity="0.55" letter-spacing="0.5" transform="rotate(-90,110,340)">PN10 &#183; multistrato</text>
+      <text x="407" y="412" text-anchor="middle" font-size="8" font-family="Montserrat,sans-serif" font-weight="600" fill="#ef4444" opacity="0.55" letter-spacing="0.5">distribuzione termica</text>
     </svg>
+
+    <!-- H1 OVERLAY -->
+    <div class="scene-hero-overlay">
+      <h1>Impianti elettrici,<br>idraulici e termici</h1>
+      <p class="scene-hero-sub">Blue Home Technologies &middot; Calabria &middot; conformit&agrave; D.M. 37/2008</p>
+    </div>
 
     <!-- TESTO FASI -->
     <div class="scroll-scene-text" id="sceneText">
@@ -195,7 +205,7 @@
   <div class="container">
     <div class="service-intro-grid">
       <div class="reveal">
-        <span class="label-upper">Impiantistica professionale</span>
+        <span class="label-upper">Conformit&agrave; D.M. 37/2008 &middot; F-Gas</span>
         <h2 style="margin:1rem 0 1.25rem;">Tre sistemi, un unico partner.</h2>
         <p>BHT progetta e installa impianti elettrici, idraulici e termici in conformità con le normative vigenti. Ogni intervento è accompagnato da dichiarazione di conformità D.M. 37/2008 e documentazione completa.</p>
       </div>
@@ -231,7 +241,7 @@
 <section class="section bg-warm">
   <div class="container">
     <div class="section-header reveal">
-      <span class="label-upper">Esplora</span>
+      <span class="label-upper">Tutto in un unico cantiere</span>
       <h2>Gli altri servizi BHT</h2>
     </div>
     <div class="other-services">
