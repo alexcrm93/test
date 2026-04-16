@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blue Home Technologies | Impianti ed Efficienza Energetica in Calabria</title>
+  <meta name="description" content="BHT installa impianti fotovoltaici, smart home, climatizzazione e impiantistica elettrica, idraulica e termica in Calabria. Efficienza energetica a Cosenza e provincia.">
+  <meta name="keywords" content="impianti fotovoltaici Calabria, smart home Cosenza, impiantistica elettrica termica idrica Sud Italia, efficienza energetica, Blue Home Technologies">
+  <link rel="stylesheet" href="shared.css">
+  <style>
+    /* ---- HERO ---- */
+    .hero {
+      min-height: 100vh;
+      background: var(--color-bg-warm);
+      display: flex;
+      align-items: center;
+      position: relative;
+      overflow: hidden;
+      padding-top: var(--nav-height);
+    }
+    .hero-inner {
+      position: relative;
+      z-index: 2;
+      max-width: 780px;
+    }
+    .hero h1 {
+      font-size: clamp(2.6rem, 6.5vw, 5.8rem);
+      font-weight: 700;
+      letter-spacing: -0.04em;
+      line-height: 1.05;
+      color: var(--color-text);
+      margin: 1.25rem 0 1.5rem;
+    }
+    .hero-sub {
+      font-size: 1.1rem;
+      font-weight: 300;
+      color: var(--color-text-muted);
+      line-height: 1.75;
+      max-width: 56ch;
+      margin-bottom: 2.5rem;
+    }
+    .hero-btns { display: flex; gap: 1rem; flex-wrap: wrap; }
+    .hero-watermark {
+      position: absolute;
+      right: -4vw;
+      bottom: -4vw;
+      opacity: 0.035;
+      pointer-events: none;
+      z-index: 1;
+    }
+    .hero-watermark svg { width: clamp(280px, 40vw, 560px); height: auto; }
+  </style>
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar" id="navbar" role="navigation" aria-label="Navigazione principale">
+  <div class="navbar-inner">
+    <a href="index.html" class="navbar-brand" aria-label="Blue Home Technologies - Homepage">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 70 73" height="34" aria-hidden="true">
+        <g transform="translate(62,30.5)">
+          <path d="M0,11.691L-16.085,-7.542L-37.563,14.852L-37.311,34.117L0,33.854L0,11.691ZM-43.432,37.237L-43.74,13.685C-43.75,12.886 -43.445,12.114 -42.89,11.536L-20.049,-12.28L-27.155,-20.778L-53.892,9.877L-53.597,36.858C-53.578,38.547 -54.942,39.932 -56.643,39.95L-56.677,39.95C-58.363,39.95 -59.739,38.603 -59.757,36.925L-60.065,8.784C-60.073,8.037 -59.806,7.313 -59.313,6.749L-29.435,-27.509C-28.849,-28.18 -27.999,-28.565 -27.106,-28.565L-27.074,-28.565C-26.17,-28.556 -25.315,-28.152 -24.736,-27.461L5.45,8.632C5.91,9.181 6.161,9.873 6.161,10.586L6.161,36.891C6.161,38.572 4.795,39.938 3.102,39.95L-40.329,40.256L-40.352,40.256C-42.036,40.256 -43.41,38.912 -43.432,37.237Z" fill="#0F4C81"/>
+        </g>
+      </svg>
+      <span class="navbar-brand-text">Blue Home Technologies</span>
+    </a>
+    <ul class="navbar-nav" role="list">
+      <li><a href="index.html" class="active">Home</a></li>
+      <li><a href="impiantistica.html">Impiantistica</a></li>
+      <li><a href="climatizzazione.html">Climatizzazione</a></li>
+      <li><a href="fotovoltaico.html">Fotovoltaico</a></li>
+      <li><a href="solare-termico.html">Solare Termico</a></li>
+      <li><a href="smart-home.html">Smart Home</a></li>
+      <li><a href="chi-siamo.html">Chi siamo</a></li>
+      <li><a href="contatti.html" class="btn btn-primary navbar-cta">Contattaci</a></li>
+    </ul>
+    <button class="navbar-toggle" id="menuToggle" aria-label="Apri menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<!-- MOBILE OVERLAY -->
+<div class="nav-overlay" id="navOverlay" role="dialog" aria-modal="true" aria-label="Menu mobile">
+  <a href="index.html">Home</a>
+  <a href="impiantistica.html">Impiantistica</a>
+  <a href="climatizzazione.html">Climatizzazione</a>
+  <a href="fotovoltaico.html">Fotovoltaico</a>
+  <a href="solare-termico.html">Solare Termico</a>
+  <a href="smart-home.html">Smart Home</a>
+  <a href="chi-siamo.html">Chi siamo</a>
+  <a href="contatti.html" class="btn btn-primary" style="margin-top:1rem;">Contattaci</a>
+</div>
+
+<!-- HERO -->
+<section class="hero" id="hero">
+  <div class="container">
+    <div class="hero-inner">
+      <span class="label-upper">Impiantistica · Efficienza Energetica · Calabria</span>
+      <h1>RIVOLUZIONIAMO L'EFFICIENZA DEL GREEN, RENDENDOLO BLUE.</h1>
+      <p class="hero-sub">Blue Home Technologies porta in Calabria le soluzioni più avanzate per impianti residenziali e commerciali, unendo tecnica, design e risparmio energetico.</p>
+      <div class="hero-btns">
+        <a href="#servizi" class="btn btn-primary">Scopri i servizi</a>
+        <a href="chi-siamo.html" class="btn btn-outline">Chi siamo</a>
+      </div>
+    </div>
+  </div>
+  <div class="hero-watermark" aria-hidden="true">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 70 73">
+      <g transform="translate(62,30.5)">
+        <path d="M0,11.691L-16.085,-7.542L-37.563,14.852L-37.311,34.117L0,33.854L0,11.691ZM-43.432,37.237L-43.74,13.685C-43.75,12.886 -43.445,12.114 -42.89,11.536L-20.049,-12.28L-27.155,-20.778L-53.892,9.877L-53.597,36.858C-53.578,38.547 -54.942,39.932 -56.643,39.95L-56.677,39.95C-58.363,39.95 -59.739,38.603 -59.757,36.925L-60.065,8.784C-60.073,8.037 -59.806,7.313 -59.313,6.749L-29.435,-27.509C-28.849,-28.18 -27.999,-28.565 -27.106,-28.565L-27.074,-28.565C-26.17,-28.556 -25.315,-28.152 -24.736,-27.461L5.45,8.632C5.91,9.181 6.161,9.873 6.161,10.586L6.161,36.891C6.161,38.572 4.795,39.938 3.102,39.95L-40.329,40.256L-40.352,40.256C-42.036,40.256 -43.41,38.912 -43.432,37.237Z" fill="#0F4C81"/>
+      </g>
+    </svg>
+  </div>
+</section>
+<!-- /HERO -->
+
+</body>
+</html>
